@@ -1,0 +1,5 @@
+#git ignores
+
+#dist
+docs/.vuepress/dist
+
