@@ -10,11 +10,11 @@ module.exports = {
         collapsable:true,
         sidebarDepth:2,
         children:[
-          '/basic',
-          'common-tools',
-          'quick-setup',
-          'shopping-guide',
-          'about-kext'
+          '/basic/basic',
+          '/basic/common-tools',
+          '/basic/quick-setup',
+          '/basic/shopping-guide',
+          '/basic/about-kext'
         ]
       },
       {
