@@ -6,7 +6,7 @@ module.exports = {
     sidebar:[
       {
         title:"基础篇",
-        path:'/basic/',
+        path:'/basic/basic',  //此处path为分组的父节点对应的文章目录，并非分组的base dir
         collapsable:true,
         sidebarDepth:2,
         children:[
@@ -19,12 +19,13 @@ module.exports = {
       },
       {
         title:"进阶篇",
-        path:'/senior/',
+        path:'/senior/senior',
         collapsable:true,
         sidebarDepth:2,
         children:[
-          '/senior/senior',
-
+          '/senior/dsdt',
+          '/senior/hotpatch',
+          
         ]
       }
     ]
