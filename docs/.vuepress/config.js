@@ -10,7 +10,6 @@ module.exports = {
         collapsable:true,
         sidebarDepth:2,
         children:[
-          '/basic/basic',
           '/basic/common-tools',
           '/basic/quick-setup',
           '/basic/shopping-guide',
@@ -25,7 +24,7 @@ module.exports = {
         children:[
           '/senior/dsdt',
           '/senior/hotpatch',
-          
+
         ]
       }
     ]
