@@ -24,7 +24,15 @@ module.exports = {
         children:[
           '/senior/dsdt',
           '/senior/hotpatch',
-
+        ]
+      },
+      {
+        title:"附录",
+        collapsable:true,
+        sidebarDepth:1,
+        children:[
+          '/others/references',
+          
         ]
       }
     ]
