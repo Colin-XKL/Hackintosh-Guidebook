@@ -4,7 +4,7 @@
   },
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js",
-    "docs:build": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js"
+    "build": "node ./build/addComponents.js && vuepress build docs && node ./build/delComponents.js",
+    "docs:build": "node ./build/addComponents.js && vuepress build docs && node ./build/delComponents.js"
   }
 }
