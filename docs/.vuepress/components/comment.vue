@@ -31,5 +31,5 @@ export default {
 };
 </script>
 <style>
-@import '../css/gittalk.css';
+@import '../css/gitalk.css';
 </style>
