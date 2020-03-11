@@ -11,7 +11,7 @@
 
 ### 黑果小兵和宪武等维护的Hotpatch仓库
 **项目地址(Clover)**:https://github.com/daliansky/P-little  
-**项目地址(OpenCore)**:https://github.com/daliansky/OC-little
+**项目地址(OpenCore)**:https://github.com/daliansky/OC-little  
 黑果小兵和宪武是国内黑苹果的两个大神，项目全中文，这个仓库收录了绝大多数常用hotpatch补丁。
 
 

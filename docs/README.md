@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /HacintoshGuidebook_white.png
-heroText: HackintoshGuidebook
+heroText: Hackintosh Guidebook
 tagline: 黑苹果快速入门手册
 actionText: 快速上手 →
 actionLink: /basic/basic
@@ -11,11 +11,11 @@ features:
 - title: 便捷高效
   details: 一站式检索黑苹果各种方面的高质量资料。对于部分不方便整理为文章的资源，我们也整理出了快速导航，可供快速检索所需信息
 - title: 开源共享
-  details: 项目文档采用MarkDown编写并在Github开源，任何人都可以参与不断构建晚上黑苹果手册项目
+  details: 项目文档采用MarkDown编写并在Github开源，任何人都可以参与构建并不断完善黑苹果手册项目
 footer: MIT Licensed | Copyright © 2020 By Colin
 ---
 
-# Hackintosh guidebook
+# Hackintosh Guidebook
 [//]: <> ( DOC HOME PAGE )
 > 黑苹果快速入门手册，为有一定基础的黑苹果新人提供指引
 
