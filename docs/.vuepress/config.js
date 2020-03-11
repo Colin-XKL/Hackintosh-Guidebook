@@ -1,7 +1,8 @@
 module.exports = {
   title: 'Hackintosh Guidebook',
-  description: 'Easy way to hackintosh',
+  description: 'Awesome Mac OS, easy to get',
   themeConfig: {
+    logo:'HacintoshGuidebook_white.png',
     lastUpdated: 'Last Updated', // string | boolean
     sidebar:[
       {
