@@ -28,9 +28,10 @@
 
 
 
-## 参考链接
+## 推荐阅读
 
-参考图文教程：
+图文教程：
 * 黑苹果 | 从零开始安装 macOS 10.14.x Mojave | 醉渔小站
-https://blog.zuiyu1818.cn/posts/Hackintosh.html
-* 
+<https://blog.zuiyu1818.cn/posts/Hackintosh.html>
+* 黑苹果 Mac OS 10.14.6 Mojave 安装 - Byron Han 的博客 | Byron Han Blog
+<https://blog.hanjl.com/2019/07/24/Hackintosh-i5-7400-b250m-D3H/>

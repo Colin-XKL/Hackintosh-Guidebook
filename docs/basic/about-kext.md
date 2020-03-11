@@ -14,6 +14,55 @@
 ### 使用其他GUI工具
 使用kext安装程序，例如Kext Wizard
 
+## 常用Kext速览表
+|驱动名称|驱动功能|
+|---|---|
+|**Lilu**|内核扩展|
+|**AppleALC**|音频，依赖 Lilu，二选一|
+|**VoodooHDA**|音频，二选一|
+|**FakeSMC**|仿冒系统总线，二选一|
+|**VirtualSMC**|仿冒系统总线，二选一|
+|**USBInjectAll**|注入 USB 端口|
+|**WhateverGreen**|显卡，依赖 Lilu|
+|ACPIBatteryManager|电笔电池管理|
+|AirportBrcmFixup|博通 Wifi 卡|
+|AppleBacklightFixup|屏幕亮度调整|
+|AsusSMC|华硕笔记本摄像头、Fn、RGB|
+|ATH9KFixup|高通无线网卡|
+|AtherosE2200Ethernet|高通 Atheros 网卡|
+|Atheroswifiinjector|高通 Atheros Wifi 卡|
+|BrcmPatchRam|博通蓝牙卡|
+|BT4LEContinuityFixup|蓝牙接力修复|
+|CodecCommander|解决唤醒外放丢失|
+|CPUFriend|处理器电源管理|
+|EnableLidWake|笔电合盖休眠支持|
+|FakePCIID|仿冒设备 ID，10.14 以前普遍用于驱动核显|
+|GenericUSBXHCI|USB3.0|
+|HibernationFixup|休眠 / 唤醒修复|
+|IntelBluetoothFirmware|英特尔蓝牙框架|
+|IntelMausi|英特尔网卡|
+|IntelMausiEthernet|英特尔网卡|
+|LiluFriend|Lilu 辅助，提升 Lilu 加载顺序|
+|MacProMemoryNotificationDisabler|解决 MacPro7|
+|NightShiftUnlocker|夜览支持，依赖 Lilu|
+|NoTouchID|关闭 TouchID 硬件检测|
+|NullCpuPowerManagement|电源管理|
+|NullEthernet|解决无法加装网卡带来的无法登陆 App Store 问题|
+|RealtekRTL8111|瑞昱系列网卡|
+|RTCMemoryFixup|内存 RTC 修复|
+|Sinetekrtsx|读卡器|
+|SmallTreeIntel82576|英特尔网卡|
+|SystemProfilerMemoryFixup|在板载内存机型上显示内存选项卡|
+|ThunderboltReset||
+|TSCAdjustReset|部分机型唤醒后卡顿|
+|VoodooI2C|触摸设备支持|
+|VoodooInput|触控板，必须于 VoodooPS2 前加载|
+|VoodooPS2|鼠标、键盘、触摸板|
+|VoodooSDHC|读卡器|
+|VoodooSMBus|触控板和手势|
+|VoodooTSCSync|多核 CPU 线程辅助|
+
+
 ## 常用Kext介绍
 ### 核心驱动
 #### FakeSMC.kext

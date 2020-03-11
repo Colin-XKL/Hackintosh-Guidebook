@@ -6,7 +6,7 @@
 由于黑苹果安装的硬件并不在Apple的官方支持范围内，我们的黑苹果在使用时由于这些硬件差异性经常会出现各种问题。比如笔记本电池电量无法显示、亮度无法调节、笔记本的快捷功能按键无法使用等等。为了解决这些问题，我们需要对我们的硬件量身定制一套黑苹果方案。这里就要来介绍DSDT/SSDT。
 
 ### 什么是DSDT
-> ACPI 全称为 Advanced Configuration and Power Interface ，即高级配置和电源管理接口，是由 HP、Intel、Microsoft、Phoenix 和 Toshiba 共同开发，**用来定义能够为主板上设备提供操作系统配置和电源管理的硬件和软件接口**的公开的行业规范。它能在操作平台独立的方式下描述系统硬件并且以固定格式的数据结构或者 AML 形式表示，**最主要的 AML 表便是 DSDT**（Differentiated System Description Table）。此外还有**SSDT**(System Services Descriptor Table)，中文为系统服务描述符表。
+> ***ACPI*** 全称为 Advanced Configuration and Power Interface ，即高级配置和电源管理接口，是由 HP、Intel、Microsoft、Phoenix 和 Toshiba 共同开发，**用来定义能够为主板上设备提供操作系统配置和电源管理的硬件和软件接口**的公开的行业规范。它能在操作平台独立的方式下描述系统硬件并且以固定格式的数据结构或者 AML 形式表示，**最主要的 AML 表便是 <u><abbr title="Differentiated System Description Table">DSDT</abbr></u>**。此外**还有<u><abbr title="System Services Descriptor Table">SSDT</abbr></u>**，中文为系统服务描述符表。
 
 ### DSDT补丁的基本原理
 DSDT打补丁的过程可以理解为：假设你的笔记本屏幕亮度控制的硬件入口为`A`，但是在标准的苹果硬件上，这个接口写作`α`，但其实两者底层原理是一样的或者说互相的访问的兼容的，那么你要让你的黑苹果系统能够正确访问到亮度调整的接口，就要为这个入口`A`起一个别名，让黑苹果系统访问`α`接口时跳转到`A`接口，从而实现黑苹果系统的亮度控制。  
@@ -27,8 +27,8 @@ DSDT打补丁的过程可以理解为：假设你的笔记本屏幕亮度控制�
 
 ## 工具
 **iasl**，下载地址如下 
-* win 版 iasl 程序 https://www.acpica.org/downloads/binary-tools
-* mac 版 iasl 程序 https://bitbucket.org/RehabMan/acpica/downloads/
+* win 版 iasl 程序 <https://www.acpica.org/downloads/binary-tools>
+* mac 版 iasl 程序 <https://bitbucket.org/RehabMan/acpica/downloads/>
 
 ## DSDT提取
 提取DSDT的几种方法
@@ -45,18 +45,18 @@ DSDT打补丁的过程可以理解为：假设你的笔记本屏幕亮度控制�
 **中文资源**
 
 * dsdt,ssdt 联合反编译小白教程 - 远景论坛 - 微软极客社区
-http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1791127
-* [视频] http://player.youku.com/embed/XMzcyMDgwODUyOA
+<http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1791127>
+* [视频] <http://player.youku.com/embed/XMzcyMDgwODUyOA>
 * 联合 DSDT 和 SSDT 进行反编译 —— 减少 DSDT 和 SSDT 错误的尝试
-http://www.360doc.com/content/16/0704/00/29520573_572792253.shtml
+<http://www.360doc.com/content/16/0704/00/29520573_572792253.shtml>
 * 浅谈 DSDT 的一些错误警告修复和一些必要代码
-http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1084354
+<http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1084354>
 * dsdt 修复 （常用小错误解决方法讨论）
-http://bbs.pcbeta.com/viewthread-748485-1-1.html
+<http://bbs.pcbeta.com/viewthread-748485-1-1.html>
 * 
 
 **英文资源**
-* 通过 Clover 实现在不提取 DSDT／SSDT 的情况下打补丁  http://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/
+* 通过 Clover 实现在不提取 DSDT／SSDT 的情况下打补丁  <http://www.tonymacx86.com/threads/guide-using-clover-to-hotpatch-acpi.200137/>
 * DSDT仓库，由社区贡献
-The files linked here are taken directly from a DSDT extract from the specific motherboard, and have been hand edited with minimal edits for CMOS reset (if necessary), UHCI/EHCI, IDE (SATA), PIC/TMR/HPET, SBUS, and HDEF. Gigabyte and ASUS DSDTs have all been checked, tested and verified. Others are from untested and unverified sources. https://www.tonymacx86.com/dsdt-database
+The files linked here are taken directly from a DSDT extract from the specific motherboard, and have been hand edited with minimal edits for CMOS reset (if necessary), UHCI/EHCI, IDE (SATA), PIC/TMR/HPET, SBUS, and HDEF. Gigabyte and ASUS DSDTs have all been checked, tested and verified. Others are from untested and unverified sources. <https://www.tonymacx86.com/dsdt-database>
 * 
