@@ -1,8 +1,11 @@
 module.exports = {
   title: 'Hackintosh Guidebook',
   description: 'Awesome Mac OS, easy to get',
+  head: [
+    ['link', { rel: 'icon', href: '/HackintoshGuidebook_favicon_tiny.png' }]
+  ],
   themeConfig: {
-    logo:'HacintoshGuidebook_white.png',
+    logo:'/HacintoshGuidebook_white.png',
     lastUpdated: 'Last Updated', // string | boolean
     sidebar:[
       {
